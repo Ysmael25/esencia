@@ -1,0 +1,51 @@
+
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+
+
+
+
+.cart-item, .favorite-item {
+    margin-bottom: 10px;
+}
+.cart-count, .favorite-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(50, 2, 193);
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18PX;
+    font-size: 0.8rem;
+}
+.dropdown-menu {
+    min-width: 450px;
+}
+
+.btn1{
+    border: 0;
+    color: gray;
+    background: white;
+}

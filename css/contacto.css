@@ -1,0 +1,29 @@
+.contenedor-contacto{
+    width: 65%;
+    background-color: white;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.google-map{
+    margin-top: 87px;
+}
+.contenedor-contacto{
+    position: relative;
+    top: -120px;
+    border-radius: 20px;
+}
+
+.btn-contacto{
+    width: 30%;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: 0;
+}
+label{
+    color: gray;
+}
+
+.bi-contacto{
+    color: white;
+}

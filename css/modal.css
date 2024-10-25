@@ -1,0 +1,21 @@
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20% 0;
+}
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+.modal-body img {
+    max-width: 50%;
+    margin-right: 20px;
+}
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

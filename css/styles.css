@@ -1,0 +1,294 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+/*estilo navbar*/
+.navbar{
+    padding: 1rem;
+    height: auto;
+    background: white;
+    box-shadow: 
+        0 0 10px rgba(255, 0, 0, 0.5), 
+        0 0 20px rgba(0, 0, 255, 0.5);
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-menu{
+    width: 380px;
+    padding: 20px;
+    height: auto;
+    right: 0;
+    left: auto;
+}
+
+/*estilo colapso productos*/
+.menu-colapso{
+    width: 50rem;
+    height: auto;
+    padding: 10px;
+}
+
+/*media para ocultar logo en menu colapsado*/
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+/*estilo buscardor*/
+.btn-buscar{
+    width: auto;
+    border: 0;
+    background: white;
+    margin: 0 10px 0 10px;
+}
+/*estilos baner*/
+.banner{
+    width: 100%;
+    margin-top: 87px;
+}
+
+/*estilos boton cards*/
+
+.btn-card{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px 20px;
+  }
+  .btn-card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #D2F25C;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 10px;
+  }
+  .btn-card:hover, .btn:focus, .btn:active {
+    color: #150940;
+  }
+  .btn-card:hover:before, .btn-card:focus:before, .btn-card:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+/*estilos cards*/
+.cards-premium, .cards-basicos{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    
+}
+.cards-premium{
+    background-color: #150940;
+}
+
+
+.premium-text, .basic-text{
+    padding:  0 15px 15px 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.tarjeta{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*estilo para colocar boton favorito en card*/
+.card{
+    position: relative;
+}
+
+.bilike2{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+.bilike2{
+    color: rgb(218, 218, 218);
+}
+.bilike2:hover{
+    color: #D2F25C;
+}
+/*estilo zoom para tarjetas*/
+/*.zoom {
+    transition: transform 0.5s; /* Animación suave */
+/*}
+
+.zoom:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+/*}
+
+/*estilo  nav animacion*/
+.nav-link {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(202, 36, 36, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #D2F25C;
+    height: 3px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .nav-link:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+    right: 0;
+  }
+
+  /*estilo contacto index*/
+  .Contacto{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
+  .datos{
+    width: 80%;
+    height: auto;
+    background: #A0A4F2;
+    margin: 20px auto 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+.checkbox{
+    margin: 20px auto 20px auto;
+    width: 75%;
+    color: white;
+    font-size: 10pt;
+    text-align: justify;
+}
+
+.btn-enviar{
+    padding: 8px 40px;
+}
+.l1,.l2,.l3,.i1,.i2,.i3{
+    width: 100%;
+}
+.l1,.l2,.l3{
+    font-weight: 500;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+
+.i1,.i2,.i3{
+    border-radius: 10px;
+    border: 0;
+    padding: 5px;
+
+}
+
+/*estilos pie de pagina*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background: #150940;
+    padding: 20px;
+}
+
+/*estilo wasap*/
+.whasap-enlace{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 35px;
+    bottom: 120px;
+    border-radius: 50%;
+    background-color: #25D366;
+    z-index: 1000;
+    border: 0;
+    
+}
+.biw{
+ color: white;       
+}
+
+/*estilos carrito y gustar*/
+.bi{
+    margin: 0px 10px;
+}
+/*estilo separar iconos del nav*/
+.carrito-gusta{
+    margin: 10px 0;
+}
+
+/*estilo texto sobre video*/
+iframe{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.contenedor-img2{
+    background-image: url(../img/perfume-2142792_640.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.contenedor-img1{
+    background-image: url(../img/aromatherapy-3173580_640.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/*estilo boton footer*/
+.btn-footer{
+    background: orange;
+    color: white;
+}
+.btn-footer:hover{
+    background: violet;
+    color: black;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
